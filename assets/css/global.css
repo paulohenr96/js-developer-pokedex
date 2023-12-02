@@ -1,24 +1,63 @@
 * {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f6f8fc;
+  background-color: #f6f8fc;
 }
 
 .content {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem;
-    background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 992px) {
-    .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
-    }
+  .content {
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
+}
+
+.data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.profile {
+  margin-left: 30px;
+  padding-right: 0;
+  border: 1px solid #2b2b2c;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-left: 10px;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.profile img {
+  max-height: 100px;
+  height: auto;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 992px) {
+  .profile img {
+    height: auto;
+    width: 100px;
+    margin-left: 60px;
+  }
+  .profile {
+    width: 20%;
+    height: 500px;
+    color: black;
+    align-self: center;
+  }
+  .contentprofile {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
 }
